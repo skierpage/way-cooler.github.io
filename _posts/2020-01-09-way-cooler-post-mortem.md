@@ -15,7 +15,7 @@ seriously to it no successor is named. Anyone is free to fork it or use the name
 
 It being my biggest open source undertaking to date I would be remiss if I did
 not spend some time reflecting on the project. What I did right, what I did
-wrong, but fair warning it's a bit long!
+wrong; but fair warning it's a bit long!
 
 ## Way Cooler: A recap of 4 years
 
@@ -32,7 +32,7 @@ My original plan was to write it in C, since that seemed to be the prevalent
 language for compositors (at the time there was only Gnome, KDE, Weston, E,
 Orbment, and an early version of Sway). Snirk convinced me to look into Rust. He
 was interested in it for its strong reliability guarantees (his area of research
-being compiler and language design). It's unique approach to memory management
+being compiler and language design). Its unique approach to memory management
 drew me in and after experimenting with the language we began work on Way
 Cooler.
 
@@ -45,7 +45,7 @@ Weston, the reference Wayland compositor, using a plugin system.
 > however libweston did not give enough control to merit the simpler codebase
 > that would result from using it. Something similar could be done today by
 > building on top of wlroots. I'm aware of wltrunk which, while not trying to be
-> a plugin-based library per-say, is trying to provide a more
+> a plugin-based library per se, is trying to provide a more
 > works-out-of-the-box experience similar to libweston or wlc.
 
 swc I don't know much about. It did not have an X11 backend which made
@@ -79,8 +79,8 @@ line example compositor from C to idiomatic Rust.
 
 > Setting a short term goal like this was a great idea and something I will
 > continue to do today. Previous attempts at big projects failed because the
-> long term vision did not pan out before my initial enthusiasm petered out.
-> Setting a short term goal helped me feel like I accomplished something before
+> long-term vision did not pan out before my initial enthusiasm petered out.
+> Setting a short-term goal helped me feel like I accomplished something before
 > the compositor was usable.
 >
 > However, there were two mistakes that were made at this stage that, at first
@@ -339,7 +339,7 @@ apply a fix within the week.
 > early versions of Way Cooler. A large part of the marketing message for Way
 > Cooler was that it was memory safe because Rust (and thus more reliable).
 > Though this became more true, it was certainly not the case at the start.
-> Many, many Rust projects use this inherit feature of Rust as a selling point
+> Many, many Rust projects use this inherent feature of Rust as a selling point
 > for their own software. As someone who once touted this as a feature, I'm
 > hesitant to do this in the future.
 >
@@ -355,7 +355,7 @@ I started adding more i3 tiling features in earnest. Before long I was using it
 as my main window manager, which only increased my output.
 
 > Dogfooding is an amazing way to encourage yourself to be productive.
-> Especially in something you use everyday. If your day job makes something you
+> Especially in something you use every day. If your day job makes something you
 > use every day then you'll be much more productive. Alternatively, being able
 > to see the impact of your work on others (either through direct user feedback
 > or numbers) can have a similar effect.
@@ -568,7 +568,7 @@ justification well enough in that post I think.
 
 In August I was annoyed enough at the project to consider giving it up. It was
 requiring considerable effort to rewrite the AwesomeWM object model in Rust +
-rlua, even with the ergonomics of the latter. As a last ditch attempt I decided
+rlua, even with the ergonomics of the latter. As a last-ditch attempt I decided
 to see how quickly I could hack the AwesomeWM binary to work under the (mostly
 working) `way-cooler` compositor written in C. To my surprise, I deleted 15
 lines of code and I had something that was working better than the Rust version
@@ -584,7 +584,7 @@ support into it that way.
 > silly decision when only a small part (the underlying backend of these
 > objects) needs to change.
 
-I actually quite far. I have a system where you can run `way-cooler -c
+I actually got quite far. I have a system where you can run `way-cooler -c
 /path/to/awesome` and you get a semi-functioning system. It can spawn programs
 defined in the keybindings, the status bar renders (and renders using
 layer-shell, not via X11), and lets you spawn things with dmenu. If there aren't
@@ -608,10 +608,10 @@ The second issue is that AwesomeWM is heavily tied to the X11 model. Trying to
 make a clone of it for Wayland led to basically recreating X11. The point of
 Wayland is to move _away_ from the X11 model, not to recreate it.
 
-I really enjoyed working on this project. Even though 2017 was the hayday, it
+I really enjoyed working on this project. Even though 2017 was the hey-day, it
 always felt so great to work on something that could be self-hosted (e.g. I could
 write Way Cooler code in Way Cooler) and was something that I was designing for
-myself first. It taught me Rust (which I currently use everyday in my day job,
+myself first. It taught me Rust (which I currently use every day in my day job,
 hi guys!), how Wayland works, how the Linux graphics pipeline works, how to deal
 with user requests, how to review patches, how to market a project, and now it's
 teaching me how to walk away from a big, awful thing you created that you have
@@ -622,7 +622,7 @@ thanks to [Snirk](https://github.com/SnirkImmington) for starting the project
 with me, Alexa for designing and drawing the logo, and
 [platipo](https://github.com/platipo) for making the [official
 background](https://github.com/way-cooler/way-cooler/issues/141). If your name
-is not here, I did not forget you this blog post is just long enough as it is
+is not here, I did not forget you; this blog post is just long enough as it is
 :).
 
 Until the next adventure.
